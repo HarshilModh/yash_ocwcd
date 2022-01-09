@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,14 @@ public class InputServlet extends HttpServlet{
 		System.out.println(name);
 		System.out.println(birthYear);
 		System.out.println(gender);
+		
+		resp.setContentType("text/html");
+		PrintWriter out=resp.getWriter();
+		out.print("<html><body>");
+		out.print("Name: "+ name.toUpperCase() +"<br>");
+		out.print("BirthYear: "+ birthYear +"<br>");
+		out.print("Gender: "+ gender +"<br>");
+		out.print("</html></body>");
 	}
 	
 	
