@@ -17,4 +17,13 @@
   <servlet-name>InputServlet</servlet-name>
   <url-pattern>/InputServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>currController</servlet-name>
+  	<servlet-class>com.controller.currController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>currController</servlet-name>
+  	<url-pattern>/currConverter</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
