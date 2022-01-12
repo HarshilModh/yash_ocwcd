@@ -32,6 +32,16 @@
   		
 
   		}%>
+  <%
+  
+  	if(request.getAttribute("afterrd")==null){
+  		out.print("Null value");
+  	}
+  	else{
+  	out.print(request.getAttribute("afterrd"));
+  	}
+  	%>
+  		  		
   Amount:><%=amount%>
 </body>
 </html>

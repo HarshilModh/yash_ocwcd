@@ -41,7 +41,7 @@ public class currController extends HttpServlet{
 		
 		RequestDispatcher rd= req.getRequestDispatcher("currConverter.jsp");
 		rd.forward(req, resp);
-			
+		req.setAttribute("afterrd", 0);
 						
 	}
 	
